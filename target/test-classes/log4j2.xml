@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="basePath">./logs</Property>
+        <!-- Optionally, you can set 'log-path' here, or use 'basePath' if needed -->
+        <!-- <Property name="log-path">${basePath}</Property> -->
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level [%t] %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- Corrected the typo from <RoRollingFile> to <RollingFile> -->
+        <RollingFile name="File" fileName="${basePath}/automation.log" filePattern="${basePath}/automation-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level [%t] %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="5MB"/> <!-- Size is typically set in MB, not just a number -->
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <!-- Uncomment the next line to enable Console logging -->
+            <!--<AppenderRef ref="Console"/>-->
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="65" passed="64" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-20T10:40:19 IST" name="Suite" finished-at="2025-02-20T10:47:54 IST" duration-ms="455476">
+    <groups>
+    </groups>
+    <test started-at="2025-02-20T10:40:19 IST" name="Test" finished-at="2025-02-20T10:47:54 IST" duration-ms="455476">
+      <class name="testCases.TC_004_ContactUs">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_004_ContactUs@328cf0e1]" started-at="2025-02-20T10:41:16 IST" name="setup" finished-at="2025-02-20T10:41:23 IST" duration-ms="7135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_contactus(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_004_ContactUs@328cf0e1]" started-at="2025-02-20T10:41:23 IST" name="verify_contactus" data-provider="ContactData" finished-at="2025-02-20T10:41:38 IST" duration-ms="14726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xyz@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qewtaRF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_contactus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_004_ContactUs@328cf0e1]" started-at="2025-02-20T10:41:38 IST" name="tearDown" finished-at="2025-02-20T10:41:38 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_004_ContactUs -->
+      <class name="testCases.TC_0014_ScrollUp">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_0014_ScrollUp@18230356]" started-at="2025-02-20T10:43:56 IST" name="setup" finished-at="2025-02-20T10:44:04 IST" duration-ms="8089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_0014_ScrollUp@18230356]" started-at="2025-02-20T10:44:04 IST" name="setupTest" finished-at="2025-02-20T10:44:04 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verify_scrollup()[pri:0, instance:testCases.TC_0014_ScrollUp@18230356]" started-at="2025-02-20T10:44:04 IST" name="verify_scrollup" finished-at="2025-02-20T10:44:18 IST" duration-ms="13372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_scrollup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_0014_ScrollUp@18230356]" started-at="2025-02-20T10:44:18 IST" name="tearDown" finished-at="2025-02-20T10:44:18 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_0014_ScrollUp -->
+      <class name="testCases.TC_0010_Category_Product">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_0010_Category_Product@53812a9b]" started-at="2025-02-20T10:43:01 IST" name="setup" finished-at="2025-02-20T10:43:07 IST" duration-ms="6344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_0010_Category_Product@53812a9b]" started-at="2025-02-20T10:43:07 IST" name="setupTest" finished-at="2025-02-20T10:43:07 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verify_categoryproduct()[pri:0, instance:testCases.TC_0010_Category_Product@53812a9b]" started-at="2025-02-20T10:43:07 IST" name="verify_categoryproduct" finished-at="2025-02-20T10:43:11 IST" duration-ms="3984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_categoryproduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_0010_Category_Product@53812a9b]" started-at="2025-02-20T10:43:12 IST" name="tearDown" finished-at="2025-02-20T10:43:12 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_0010_Category_Product -->
+      <class name="testCases.TC_0011_ViewCardBrands">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_0011_ViewCardBrands@14b030a0]" started-at="2025-02-20T10:43:12 IST" name="setup" finished-at="2025-02-20T10:43:19 IST" duration-ms="7457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_0011_ViewCardBrands@14b030a0]" started-at="2025-02-20T10:43:19 IST" name="setupTest" finished-at="2025-02-20T10:43:19 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Verify_BrandPage()[pri:0, instance:testCases.TC_0011_ViewCardBrands@14b030a0]" started-at="2025-02-20T10:43:19 IST" name="Verify_BrandPage" finished-at="2025-02-20T10:43:26 IST" duration-ms="6212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_BrandPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_0011_ViewCardBrands@14b030a0]" started-at="2025-02-20T10:43:26 IST" name="tearDown" finished-at="2025-02-20T10:43:26 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_0011_ViewCardBrands -->
+      <class name="testCases.TC_009_verifylogin_Checkout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_009_verifylogin_Checkout@45c8d09f]" started-at="2025-02-20T10:42:32 IST" name="setup" finished-at="2025-02-20T10:42:40 IST" duration-ms="8201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_009_verifylogin_Checkout@45c8d09f]" started-at="2025-02-20T10:42:40 IST" name="setupTest" finished-at="2025-02-20T10:42:40 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifyCheckout(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_009_verifylogin_Checkout@45c8d09f]" started-at="2025-02-20T10:42:40 IST" name="verifyCheckout" data-provider="LoginData" finished-at="2025-02-20T10:43:01 IST" duration-ms="20203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NCtest232@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NCtest123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_009_verifylogin_Checkout@45c8d09f]" started-at="2025-02-20T10:43:01 IST" name="tearDown" finished-at="2025-02-20T10:43:01 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_009_verifylogin_Checkout -->
+      <class name="testCases.TC_008_ProductQun">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_008_ProductQun@4ee37ca3]" started-at="2025-02-20T10:42:14 IST" name="setup" finished-at="2025-02-20T10:42:27 IST" duration-ms="13604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_008_ProductQun@4ee37ca3]" started-at="2025-02-20T10:42:27 IST" name="setupTest" finished-at="2025-02-20T10:42:27 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verify_productquentity()[pri:0, instance:testCases.TC_008_ProductQun@4ee37ca3]" started-at="2025-02-20T10:42:27 IST" name="verify_productquentity" finished-at="2025-02-20T10:42:32 IST" duration-ms="4395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_productquentity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_008_ProductQun@4ee37ca3]" started-at="2025-02-20T10:42:32 IST" name="tearDown" finished-at="2025-02-20T10:42:32 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_008_ProductQun -->
+      <class name="testCases.TC_003_Acc_Info">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_003_Acc_Info@2fc0cc3]" started-at="2025-02-20T10:41:01 IST" name="setup" finished-at="2025-02-20T10:41:08 IST" duration-ms="7221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Verify_Acc_info(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_003_Acc_Info@2fc0cc3]" started-at="2025-02-20T10:41:08 IST" name="Verify_Acc_info" data-provider="TestData2" finished-at="2025-02-20T10:41:15 IST" duration-ms="7193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NCtest232@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NCtest123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Acc_info -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_003_Acc_Info@2fc0cc3]" started-at="2025-02-20T10:41:16 IST" name="tearDown" finished-at="2025-02-20T10:41:16 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_003_Acc_Info -->
+      <class name="testCases.TC_0016_SignupwithMtlRandData">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_0016_SignupwithMtlRandData@56bca85b]" started-at="2025-02-20T10:47:26 IST" name="setup" finished-at="2025-02-20T10:47:34 IST" duration-ms="7594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_0016_SignupwithMtlRandData@56bca85b]" started-at="2025-02-20T10:47:34 IST" name="setupTest" finished-at="2025-02-20T10:47:34 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verify_multiplesignupwithrandomdata()[pri:0, instance:testCases.TC_0016_SignupwithMtlRandData@56bca85b]" started-at="2025-02-20T10:47:34 IST" name="verify_multiplesignupwithrandomdata" finished-at="2025-02-20T10:47:54 IST" duration-ms="20190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignupwithrandomdata -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_0016_SignupwithMtlRandData@56bca85b]" started-at="2025-02-20T10:47:54 IST" name="tearDown" finished-at="2025-02-20T10:47:54 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_0016_SignupwithMtlRandData -->
+      <class name="testCases.TC_0015_SignupMultipleUsers">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:18 IST" name="setup" finished-at="2025-02-20T10:44:31 IST" duration-ms="12464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:31 IST" name="setupTest" finished-at="2025-02-20T10:44:31 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:32 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:44:36 IST" duration-ms="3727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Aaron Rodriguez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaron.rodriguez0@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:36 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:44:39 IST" duration-ms="3107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Victoria Flores]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[victoria.flores1@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:39 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:44:42 IST" duration-ms="3010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kevin Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kevin.smith2@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:43 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:44:48 IST" duration-ms="5094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Quinn Brown]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[quinn.brown3@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:48 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:44:51 IST" duration-ms="3053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chris King]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chris.king4@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:51 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:44:54 IST" duration-ms="3151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lily Mitchell]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lily.mitchell5@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:54 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:44:57 IST" duration-ms="3111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Isaac Robinson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[isaac.robinson6@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:44:58 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:01 IST" duration-ms="3051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ryan Gonzalez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ryan.gonzalez7@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:01 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:04 IST" duration-ms="3247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Penny Hernandez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[penny.hernandez8@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:04 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:08 IST" duration-ms="3480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Charlie Anderson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[charlie.anderson9@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:08 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:11 IST" duration-ms="3084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Uma Perez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[uma.perez10@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:11 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:14 IST" duration-ms="3137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Quinn Johnson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[quinn.johnson11@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:14 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:18 IST" duration-ms="3828" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yasmin Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yasmin.smith12@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:18 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:21 IST" duration-ms="2982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Katie Wilson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[katie.wilson13@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:21 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:25 IST" duration-ms="3965" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vincent Roberts]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vincent.roberts14@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:26 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:28 IST" duration-ms="2945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ethan Carter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ethan.carter15@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:29 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:33 IST" duration-ms="4028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Leo Johnson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[leo.johnson16@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:33 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:36 IST" duration-ms="3196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Oscar Perez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[oscar.perez17@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:36 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:39 IST" duration-ms="3029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Xander Johnson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xander.johnson18@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:39 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:42 IST" duration-ms="3103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Will Davis]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[will.davis19@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:43 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:46 IST" duration-ms="3116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Umar Scott]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[umar.scott20@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:46 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:49 IST" duration-ms="3187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Isaac Roberts]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[isaac.roberts21@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:49 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:54 IST" duration-ms="4483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mark Rivera]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mark.rivera22@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:54 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:45:57 IST" duration-ms="3059" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sam Nelson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sam.nelson23@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:45:57 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:00 IST" duration-ms="2975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Grace Williams]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[grace.williams24@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:00 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:03 IST" duration-ms="3156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chris Allen]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chris.allen25@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:04 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:07 IST" duration-ms="3302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Emma Allen]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emma.allen26@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:07 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:12 IST" duration-ms="4428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rachel Moore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rachel.moore27@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:12 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:15 IST" duration-ms="3218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vincent Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vincent.smith28@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:15 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:19 IST" duration-ms="3658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ryan Moore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ryan.moore29@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:19 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:22 IST" duration-ms="3109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bella Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bella.smith30@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:22 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:25 IST" duration-ms="3112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John Scott]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john.scott31@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:26 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:29 IST" duration-ms="3315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane Perez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jane.perez32@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:29 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:32 IST" duration-ms="3194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tina Young]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tina.young33@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:32 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:35 IST" duration-ms="2994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Umar Wright]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[umar.wright34@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:36 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:39 IST" duration-ms="3218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lily King]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lily.king35@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:39 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:42 IST" duration-ms="3160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bella Ramirez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bella.ramirez36@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:42 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:46 IST" duration-ms="3191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Isaac Williams]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[isaac.williams37@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:46 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:49 IST" duration-ms="2992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fiona Baker]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fiona.baker38@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:49 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:52 IST" duration-ms="3305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Penny Gonzalez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[penny.gonzalez39@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:52 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:46:55 IST" duration-ms="3134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jack Garcia]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jack.garcia40@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:46:56 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:47:00 IST" duration-ms="4010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ryan Anderson]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ryan.anderson41@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:47:00 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:47:03 IST" duration-ms="3193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nina Young]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nina.young42@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:47:03 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:47:06 IST" duration-ms="3193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sam Mitchell]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sam.mitchell43@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:47:07 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:47:09 IST" duration-ms="2884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Julia Miller]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[julia.miller44@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:47:10 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:47:13 IST" duration-ms="3204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tina Lewis]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tina.lewis45@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:47:13 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:47:16 IST" duration-ms="3199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Henry Smith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[henry.smith46@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:47:16 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:47:19 IST" duration-ms="2978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jane Rodriguez]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[jane.rodriguez47@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:47:19 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:47:22 IST" duration-ms="3040" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Aaron Garcia]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaron.garcia48@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method signature="verify_multiplesignup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:47:23 IST" name="verify_multiplesignup" data-provider="SignupData" finished-at="2025-02-20T10:47:26 IST" duration-ms="3088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chris Jones]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chris.jones49@example.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_multiplesignup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_0015_SignupMultipleUsers@d8305c2]" started-at="2025-02-20T10:47:26 IST" name="tearDown" finished-at="2025-02-20T10:47:26 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_0015_SignupMultipleUsers -->
+      <class name="testCases.TC_001_DDT_SignUp">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_001_DDT_SignUp@4febb875]" started-at="2025-02-20T10:40:19 IST" name="setup" finished-at="2025-02-20T10:40:27 IST" duration-ms="7462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_DDT_SignUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_DDT_SignUp@4febb875]" started-at="2025-02-20T10:40:27 IST" name="verify_DDT_SignUp" data-provider="LoginData" finished-at="2025-02-20T10:40:50 IST" duration-ms="22854" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NCtest232@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NCtest123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//b[contains(text(),'Enter Account Information')]"}
+  (Session info: MicrosoftEdge=133.0.3065.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7ef8f32f422a049054da2367702a8173, findElement {using=xpath, value=//b[contains(text(),'Enter Account Information')]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.69, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9222}, msedge: {msedgedriverVersion: 133.0.3065.69 (c3f010c11f3e..., userDataDir: C:\Users\NISHA~1.KUM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 133.0.3065.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ef8f32f422a049054da2367702a8173]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//b[contains(text(),'Enter Account Information')]"}
+  (Session info: MicrosoftEdge=133.0.3065.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7ef8f32f422a049054da2367702a8173, findElement {using=xpath, value=//b[contains(text(),'Enter Account Information')]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.69, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9222}, msedge: {msedgedriverVersion: 133.0.3065.69 (c3f010c11f3e..., userDataDir: C:\Users\NISHA~1.KUM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 133.0.3065.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ef8f32f422a049054da2367702a8173
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy30.getText(Unknown Source)
+at pageObject.SignupPage.isConfirmationMessageDisplayed(SignupPage.java:39)
+at testCases.TC_001_DDT_SignUp.verify_DDT_SignUp(TC_001_DDT_SignUp.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_DDT_SignUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_DDT_SignUp@4febb875]" started-at="2025-02-20T10:40:51 IST" name="tearDown" finished-at="2025-02-20T10:40:51 IST" duration-ms="36" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=133.0.3065.69)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7ef8f32f422a049054da2367702a8173, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.69, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9222}, msedge: {msedgedriverVersion: 133.0.3065.69 (c3f010c11f3e..., userDataDir: C:\Users\NISHA~1.KUM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 133.0.3065.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ef8f32f422a049054da2367702a8173]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=133.0.3065.69)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7ef8f32f422a049054da2367702a8173, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.69, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9222}, msedge: {msedgedriverVersion: 133.0.3065.69 (c3f010c11f3e..., userDataDir: C:\Users\NISHA~1.KUM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 133.0.3065.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ef8f32f422a049054da2367702a8173
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
+at testBase.BaseClass.tearDown(BaseClass.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_001_DDT_SignUp -->
+      <class name="testCases.TC_0012_AddReview">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_0012_AddReview@41e350f1]" started-at="2025-02-20T10:43:26 IST" name="setup" finished-at="2025-02-20T10:43:33 IST" duration-ms="7119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_0012_AddReview@41e350f1]" started-at="2025-02-20T10:43:33 IST" name="setupTest" finished-at="2025-02-20T10:43:33 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verify_Review_Page()[pri:0, instance:testCases.TC_0012_AddReview@41e350f1]" started-at="2025-02-20T10:43:33 IST" name="verify_Review_Page" finished-at="2025-02-20T10:43:38 IST" duration-ms="4965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Review_Page -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_0012_AddReview@41e350f1]" started-at="2025-02-20T10:43:38 IST" name="tearDown" finished-at="2025-02-20T10:43:38 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_0012_AddReview -->
+      <class name="testCases.TC_006_Search_product">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_006_Search_product@42e3ede4]" started-at="2025-02-20T10:41:51 IST" name="setup" finished-at="2025-02-20T10:41:59 IST" duration-ms="7935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_searchproduct()[pri:0, instance:testCases.TC_006_Search_product@42e3ede4]" started-at="2025-02-20T10:41:59 IST" name="verify_searchproduct" finished-at="2025-02-20T10:42:05 IST" duration-ms="5598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_searchproduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_006_Search_product@42e3ede4]" started-at="2025-02-20T10:42:05 IST" name="tearDown" finished-at="2025-02-20T10:42:05 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_006_Search_product -->
+      <class name="testCases.TC_005_Product_details">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_005_Product_details@63b1d4fa]" started-at="2025-02-20T10:41:38 IST" name="setup" finished-at="2025-02-20T10:41:46 IST" duration-ms="7566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Verify_Product_Details()[pri:0, instance:testCases.TC_005_Product_details@63b1d4fa]" started-at="2025-02-20T10:41:46 IST" name="Verify_Product_Details" finished-at="2025-02-20T10:41:51 IST" duration-ms="5062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Product_Details -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_005_Product_details@63b1d4fa]" started-at="2025-02-20T10:41:51 IST" name="tearDown" finished-at="2025-02-20T10:41:51 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_005_Product_details -->
+      <class name="testCases.TC_0013_RecommendedItem">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_0013_RecommendedItem@422c3c7a]" started-at="2025-02-20T10:43:38 IST" name="setup" finished-at="2025-02-20T10:43:53 IST" duration-ms="14330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_0013_RecommendedItem@422c3c7a]" started-at="2025-02-20T10:43:53 IST" name="setupTest" finished-at="2025-02-20T10:43:53 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verify_recommendedItem()[pri:0, instance:testCases.TC_0013_RecommendedItem@422c3c7a]" started-at="2025-02-20T10:43:53 IST" name="verify_recommendedItem" finished-at="2025-02-20T10:43:56 IST" duration-ms="2854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_recommendedItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_0013_RecommendedItem@422c3c7a]" started-at="2025-02-20T10:43:56 IST" name="tearDown" finished-at="2025-02-20T10:43:56 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_0013_RecommendedItem -->
+      <class name="testCases.TC_007_Subscription">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_007_Subscription@5f031ebd]" started-at="2025-02-20T10:42:05 IST" name="setup" finished-at="2025-02-20T10:42:13 IST" duration-ms="7690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:testCases.TC_007_Subscription@5f031ebd]" started-at="2025-02-20T10:42:13 IST" name="setupTest" finished-at="2025-02-20T10:42:13 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="verifySubscription()[pri:0, instance:testCases.TC_007_Subscription@5f031ebd]" started-at="2025-02-20T10:42:13 IST" name="verifySubscription" finished-at="2025-02-20T10:42:13 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscription -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_007_Subscription@5f031ebd]" started-at="2025-02-20T10:42:13 IST" name="tearDown" finished-at="2025-02-20T10:42:14 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_007_Subscription -->
+      <class name="testCases.TC_001_SignUp">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_001_SignUp@10c626be]" started-at="2025-02-20T10:40:51 IST" name="setup" finished-at="2025-02-20T10:40:57 IST" duration-ms="6798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_signup()[pri:0, instance:testCases.TC_001_SignUp@10c626be]" started-at="2025-02-20T10:40:57 IST" name="verify_signup" finished-at="2025-02-20T10:41:01 IST" duration-ms="3093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_signup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_SignUp@10c626be]" started-at="2025-02-20T10:41:01 IST" name="tearDown" finished-at="2025-02-20T10:41:01 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_001_SignUp -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

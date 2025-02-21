@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+    <test thread-count="5" name="Test">
+        <classes>
+                    
+            <class name="testCases.TC_001_DDT_SignUp"/>    
+            <class name="testCases.TC_001_SignUp"/>
+           <class name="testCases.TC_003_Acc_Info"/>
+           <class name="testCases.TC_004_ContactUs"/>
+           <class name="testCases.TC_005_Product_details"/>
+           <class name="testCases.TC_006_Search_product"/>
+           <class name="testCases.TC_007_Subscription"/>
+           <class name="testCases.TC_008_ProductQun"/>
+           <class name="testCases.TC_009_verifylogin_Checkout"/>
+           <class name="testCases.TC_0010_Category_Product"/>
+           <class name="testCases.TC_0011_ViewCardBrands"/>
+           <class name="testCases.TC_0012_AddReview"/>
+           <class name="testCases.TC_0013_RecommendedItem"/>
+           <class name="testCases.TC_0014_ScrollUp"/>
+           <class name="testCases.TC_0015_SignupMultipleUsers"/>
+           <class name="testCases.TC_0016_SignupwithMtlRandData"/>
+
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
+

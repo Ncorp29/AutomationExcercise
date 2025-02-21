@@ -1,0 +1,579 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>64/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 20 10:40:19 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>455 seconds (455476 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC_001_DDT_SignUp.tearDown()'><b>tearDown</b><br>Test class: testCases.TC_001_DDT_SignUp</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=133.0.3065.69)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7ef8f32f422a049054da2367702a8173, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.69, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9222}, msedge: {msedgedriverVersion: 133.0.3065.69 (c3f010c11f3e..., userDataDir: C:\Users\NISHA~1.KUM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 133.0.3065.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ef8f32f422a049054da2367702a8173
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
+	at testBase.BaseClass.tearDown(BaseClass.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1245434971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1245434971'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=133.0.3065.69)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7ef8f32f422a049054da2367702a8173, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.69, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9222}, msedge: {msedgedriverVersion: 133.0.3065.69 (c3f010c11f3e..., userDataDir: C:\Users\NISHA~1.KUM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 133.0.3065.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ef8f32f422a049054da2367702a8173
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
+	at testBase.BaseClass.tearDown(BaseClass.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
+	at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC_001_DDT_SignUp@4febb875</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC_001_DDT_SignUp.verify_DDT_SignUp()'><b>verify_DDT_SignUp</b><br>Test class: testCases.TC_001_DDT_SignUp<br>Parameters: NCtest232@gmail.com, NCtest123</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[contains(text(),&apos;Enter Account Information&apos;)]&quot;}
+  (Session info: MicrosoftEdge=133.0.3065.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7ef8f32f422a049054da2367702a8173, findElement {using=xpath, value=//b[contains(text(),&apos;Enter Account Information&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.69, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9222}, msedge: {msedgedriverVersion: 133.0.3065.69 (c3f010c11f3e..., userDataDir: C:\Users\NISHA~1.KUM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 133.0.3065.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ef8f32f422a049054da2367702a8173
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.getText(Unknown Source)
+	at pageObject.SignupPage.isConfirmationMessageDisplayed(SignupPage.java:39)
+	at testCases.TC_001_DDT_SignUp.verify_DDT_SignUp(TC_001_DDT_SignUp.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1235678342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1235678342'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[contains(text(),&apos;Enter Account Information&apos;)]&quot;}
+  (Session info: MicrosoftEdge=133.0.3065.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7ef8f32f422a049054da2367702a8173, findElement {using=xpath, value=//b[contains(text(),&apos;Enter Account Information&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 133.0.3065.69, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:9222}, msedge: {msedgedriverVersion: 133.0.3065.69 (c3f010c11f3e..., userDataDir: C:\Users\NISHA~1.KUM\AppDat...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9222/devtool..., se:cdpVersion: 133.0.3065.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ef8f32f422a049054da2367702a8173
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.getText(Unknown Source)
+	at pageObject.SignupPage.isConfirmationMessageDisplayed(SignupPage.java:39)
+	at testCases.TC_001_DDT_SignUp.verify_DDT_SignUp(TC_001_DDT_SignUp.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>22</td>
+<td>testCases.TC_001_DDT_SignUp@4febb875</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Isaac Roberts, isaac.roberts21@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Ryan Moore, ryan.moore29@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Ryan Gonzalez, ryan.gonzalez7@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Victoria Flores, victoria.flores1@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Vincent Smith, vincent.smith28@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Nina Young, nina.young42@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Will Davis, will.davis19@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Emma Allen, emma.allen26@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_003_Acc_Info.Verify_Acc_info()'><b>Verify_Acc_info</b><br>Test class: testCases.TC_003_Acc_Info<br>Parameters: john, NCtest232@gmail.com, NCtest123</td>
+<td></td>
+<td>7</td>
+<td>testCases.TC_003_Acc_Info@2fc0cc3</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Aaron Garcia, aaron.garcia48@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_006_Search_product.verify_searchproduct()'><b>verify_searchproduct</b><br>Test class: testCases.TC_006_Search_product</td>
+<td></td>
+<td>5</td>
+<td>testCases.TC_006_Search_product@42e3ede4</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Tina Young, tina.young33@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0013_RecommendedItem.verify_recommendedItem()'><b>verify_recommendedItem</b><br>Test class: testCases.TC_0013_RecommendedItem</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_0013_RecommendedItem@422c3c7a</td></tr>
+<tr>
+<td title='testCases.TC_0010_Category_Product.verify_categoryproduct()'><b>verify_categoryproduct</b><br>Test class: testCases.TC_0010_Category_Product</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0010_Category_Product@53812a9b</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Quinn Johnson, quinn.johnson11@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: John Scott, john.scott31@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_008_ProductQun.verify_productquentity()'><b>verify_productquentity</b><br>Test class: testCases.TC_008_ProductQun</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC_008_ProductQun@4ee37ca3</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Chris Jones, chris.jones49@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Uma Perez, uma.perez10@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Isaac Robinson, isaac.robinson6@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Ryan Anderson, ryan.anderson41@example.com</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Tina Lewis, tina.lewis45@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Bella Smith, bella.smith30@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_001_SignUp.verify_signup()'><b>verify_signup</b><br>Test class: testCases.TC_001_SignUp</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_001_SignUp@10c626be</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Bella Ramirez, bella.ramirez36@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Umar Scott, umar.scott20@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Ethan Carter, ethan.carter15@example.com</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Chris Allen, chris.allen25@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Charlie Anderson, charlie.anderson9@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Chris King, chris.king4@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_007_Subscription.verifySubscription()'><b>verifySubscription</b><br>Test class: testCases.TC_007_Subscription</td>
+<td></td>
+<td>0</td>
+<td>testCases.TC_007_Subscription@5f031ebd</td></tr>
+<tr>
+<td title='testCases.TC_009_verifylogin_Checkout.verifyCheckout()'><b>verifyCheckout</b><br>Test class: testCases.TC_009_verifylogin_Checkout<br>Parameters: NCtest232@gmail.com, NCtest123</td>
+<td></td>
+<td>20</td>
+<td>testCases.TC_009_verifylogin_Checkout@45c8d09f</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Isaac Williams, isaac.williams37@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Sam Nelson, sam.nelson23@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Mark Rivera, mark.rivera22@example.com</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Grace Williams, grace.williams24@example.com</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Julia Miller, julia.miller44@example.com</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0011_ViewCardBrands.Verify_BrandPage()'><b>Verify_BrandPage</b><br>Test class: testCases.TC_0011_ViewCardBrands</td>
+<td></td>
+<td>6</td>
+<td>testCases.TC_0011_ViewCardBrands@14b030a0</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Umar Wright, umar.wright34@example.com</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Xander Johnson, xander.johnson18@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Jack Garcia, jack.garcia40@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Quinn Brown, quinn.brown3@example.com</td>
+<td></td>
+<td>5</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Sam Mitchell, sam.mitchell43@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Yasmin Smith, yasmin.smith12@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Oscar Perez, oscar.perez17@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Jane Rodriguez, jane.rodriguez47@example.com</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Jane Perez, jane.perez32@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_005_Product_details.Verify_Product_Details()'><b>Verify_Product_Details</b><br>Test class: testCases.TC_005_Product_details</td>
+<td></td>
+<td>5</td>
+<td>testCases.TC_005_Product_details@63b1d4fa</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Kevin Smith, kevin.smith2@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Aaron Rodriguez, aaron.rodriguez0@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0012_AddReview.verify_Review_Page()'><b>verify_Review_Page</b><br>Test class: testCases.TC_0012_AddReview</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC_0012_AddReview@41e350f1</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Lily King, lily.king35@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Vincent Roberts, vincent.roberts14@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Rachel Moore, rachel.moore27@example.com</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Fiona Baker, fiona.baker38@example.com</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_004_ContactUs.verify_contactus()'><b>verify_contactus</b><br>Test class: testCases.TC_004_ContactUs<br>Parameters: abc, xyz@gmail.com, qewtaRF</td>
+<td></td>
+<td>14</td>
+<td>testCases.TC_004_ContactUs@328cf0e1</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Katie Wilson, katie.wilson13@example.com</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0016_SignupwithMtlRandData.verify_multiplesignupwithrandomdata()'><b>verify_multiplesignupwithrandomdata</b><br>Test class: testCases.TC_0016_SignupwithMtlRandData</td>
+<td></td>
+<td>20</td>
+<td>testCases.TC_0016_SignupwithMtlRandData@56bca85b</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Penny Hernandez, penny.hernandez8@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Leo Johnson, leo.johnson16@example.com</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Henry Smith, henry.smith46@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0014_ScrollUp.verify_scrollup()'><b>verify_scrollup</b><br>Test class: testCases.TC_0014_ScrollUp</td>
+<td></td>
+<td>13</td>
+<td>testCases.TC_0014_ScrollUp@18230356</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Lily Mitchell, lily.mitchell5@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+<tr>
+<td title='testCases.TC_0015_SignupMultipleUsers.verify_multiplesignup()'><b>verify_multiplesignup</b><br>Test class: testCases.TC_0015_SignupMultipleUsers<br>Parameters: Penny Gonzalez, penny.gonzalez39@example.com</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_0015_SignupMultipleUsers@d8305c2</td></tr>
+</table><p>
+</body>
+</html>
