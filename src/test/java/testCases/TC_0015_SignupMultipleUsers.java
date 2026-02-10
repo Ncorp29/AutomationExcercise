@@ -1,6 +1,9 @@
 package testCases;
 
 
+import java.time.Duration;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,6 +28,8 @@ public class TC_0015_SignupMultipleUsers extends BaseClass {
 		sp.setName(Name);
 		sp.setEmail(Email);
 		sp.clicksignupbtn();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(d -> sp.isConfirmationMessageDisplayed());
 		validateText("signup",sp.isConfirmationMessageDisplayed(),"Text Mismatched");
 		driver.navigate().back();
 	}
