@@ -13,7 +13,8 @@ public class ProductDetailsPage extends BasePage {
 	}
 @FindBy(xpath="//h2[@class='title text-center']")
 WebElement AllProduct;
-WebElement ViewProduct = driver.findElement(By.cssSelector("a[href='/product_details/1']"));
+@FindBy(css="a[href='/product_details/1']")
+WebElement ViewProduct;
 
 @FindBy(xpath="//h2[normalize-space()='Blue Top']")
 WebElement ProductName;
