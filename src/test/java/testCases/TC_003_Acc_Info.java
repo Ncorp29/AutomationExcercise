@@ -34,6 +34,7 @@ public void Verify_Acc_info(String username,String email,String password) throws
         ap.setZipCode("124354");
         ap.setMobileNo("1234546");
         ap.clickCreateAcc();
+        Assert.assertTrue(ap.isConfirmationMessageDisplayed(),"Account creation confirmation message not displayed");
 		validateText("Acc_cre",ap.isConfirmationMessageDisplayed(),"Text Mismatched");
 	
 	}
