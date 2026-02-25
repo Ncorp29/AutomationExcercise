@@ -14,13 +14,13 @@ public class SearchProductPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 	
-	@FindBy(xpath="//h2[@class='title text-center']")
+	@FindBy(xpath="//h2[@class='title text-center' and normalize-space()='All Products']")
 	WebElement AllProducts;
 	@FindBy(xpath="//input[@id='search_product']")
 	WebElement SetSearch;
 	@FindBy(xpath="//button[@id='submit_search']")
 	WebElement SubmitSearch;
-	@FindBy(xpath="//h2[@class='title text-center']")
+	@FindBy(xpath="//h2[@class='title text-center' and normalize-space()='Searched Products']")
 	WebElement SearchItem;
 	private By productList = By.className("product-image-wrapper");	
 public String isallproductDisplayed() {

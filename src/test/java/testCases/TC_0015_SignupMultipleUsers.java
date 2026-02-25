@@ -31,3 +31,6 @@ public class TC_0015_SignupMultipleUsers extends BaseClass {
 	
 
 }
+
+
+// TODO: AI fix suggestion (5tqc7sbj): Review and improve: The data-driven signup test blindly creates new user accounts on every run and never cleans up or guards against duplicate emails. This floods the application under test with redundant records, burns through backend resources, and will start failing once the signup endpoint rejects previously used data or throttles requests. Introduce a teardown/cleanup strategy, reuse existing accounts when possible, or add logic to verify if the test data already exists before creating another record.
