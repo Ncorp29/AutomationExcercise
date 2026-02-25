@@ -22,10 +22,11 @@ WebElement Loggedin;
 WebElement Delete_Acc;
 @FindBy(xpath = "//b[normalize-space()='Account Deleted!']")
 WebElement AccountDeleted;
-public void setemail(String email) {
+public void login(String email, String password) {
+	if (email == null || email.isBlank() || password == null || password.isBlank()) {
+		throw new IllegalArgumentException("Credentials must be provided");
+	}
 	loginemail.sendKeys(email);
-}
-public void setpassword(String password) {
 	loginPassword.sendKeys(password);
 }
 public void clicklogin() {

@@ -21,8 +21,17 @@ public class TC_001_DDT_SignUp extends BaseClass{
 		HomePage hp = new HomePage(driver);
 	    hp.clicksignup();
 	    SignupPage sp = new SignupPage(driver);
-	    sp.setName(username);
-	    sp.setEmail(email);
+	    String normalizedUsername = username.trim();
+	    String normalizedEmail = email.trim();
+	    String uniqueEmail = normalizedEmail;
+	    int atIndex = normalizedEmail.indexOf('@');
+	    if (atIndex > 0) {
+	    	String localPart = normalizedEmail.substring(0, atIndex);
+	    	String domainPart = normalizedEmail.substring(atIndex);
+	    	uniqueEmail = localPart + "+" + System.currentTimeMillis() + domainPart;
+	    }
+	    sp.setName(normalizedUsername);
+	    sp.setEmail(uniqueEmail);
 	    sp.clicksignupbtn();
 	    
 		validateText("signup",sp.isConfirmationMessageDisplayed(),"Text Mismatched");
