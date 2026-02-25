@@ -1,0 +1,11 @@
+# AI Fix Notes
+
+Session: seq-1771999702961-o5hqqk53v
+Repository: Ncorp29/AutomationExcercise
+
+- [1] (critical) src/test/java/testCases/TC_008_ProductQun.java: Unresolved placeholder '...' in the test body is invalid Java and prevents the class from compiling/executing. Replace the ellipsis with concrete test logic or remove it before running the suite.
+- [2] (high) src/test/java/pageObject/ProductDetailsPage.java: Instantiating `WebElement ViewProduct` via `driver.findElement(...)` at field declaration time executes before the page object constructor and before `driver` is initialized, which will throw NullPointerExceptions and breaks the Page Object lifecycle. Use `@FindBy` with PageFactory initialization or locate elements inside methods after navigation.
+- [3] (high) src/test/java/pageObject/SearchProductPage.java: The `SearchItem` WebElement is defined with the exact same XPath as `AllProducts` (`//h2[@class='title text-center']`). Any validation that reads `SearchItem` will therefore always return the generic “All Products” heading, making the search verification logic ineffective. Define a dedicated locator that points to the actual search result confirmation text (e.g., `'//h2[text()="Searched Products"]'`) and add assertions that verify expected versus actual search text.
+- [4] (high) src/test/java/testCases/TC_001_DDT_SignUp.java: The data-driven test reuses the same browser session across multiple signup iterations without clearing input fields or resetting navigation, relying only on re-entering values. If the form displays validation errors or modal dialogs, the next iteration will fail because the page is not returned to its initial state. Introduce @BeforeMethod setup that navigates to the signup page and clears existing values, or ensure each data row runs in a fresh WebDriver session.
+- [5] (high) src/test/java/utilities/ExcelUtility.java: The FileInputStream/FileOutputStream and workbook stored as instance fields are never closed; every invocation leaves file handles and temporary locks open, which will quickly exhaust handles and block parallel tests. Wrap every I/O interaction with try-with-resources (or explicit finally blocks) and close the workbook/streams immediately after use.
+
