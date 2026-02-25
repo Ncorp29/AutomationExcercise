@@ -13,7 +13,7 @@ public class AddReviewPage extends BasePage {
 
 @FindBy(xpath="//h2[@class='title text-center']")
 WebElement AllProd;
-@FindBy(xpath="//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[2]//ul[1]//li[1]//a[1]")
+@FindBy(xpath="(//a[normalize-space()='View Product'])[1]")
 WebElement ViewProd;
 @FindBy(xpath="//a[normalize-space()='Write Your Review']")
 WebElement WriteReviewText;
