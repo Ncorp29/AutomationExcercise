@@ -1,19 +1,21 @@
 package pageObject;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class ProductDetailsPage extends BasePage {
 
 	public ProductDetailsPage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
+		PageFactory.initElements(driver, this);
 	}
 @FindBy(xpath="//h2[@class='title text-center']")
 WebElement AllProduct;
-WebElement ViewProduct = driver.findElement(By.cssSelector("a[href='/product_details/1']"));
+@FindBy(css="a[href='/product_details/1']")
+WebElement ViewProduct;
 
 @FindBy(xpath="//h2[normalize-space()='Blue Top']")
 WebElement ProductName;
