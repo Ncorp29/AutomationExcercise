@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class SearchProductPage extends BasePage {
 
@@ -20,7 +21,7 @@ public class SearchProductPage extends BasePage {
 	WebElement SetSearch;
 	@FindBy(xpath="//button[@id='submit_search']")
 	WebElement SubmitSearch;
-	@FindBy(xpath="//h2[@class='title text-center']")
+	@FindBy(xpath="//h2[text()='Searched Products']")
 	WebElement SearchItem;
 	private By productList = By.className("product-image-wrapper");	
 public String isallproductDisplayed() {
@@ -34,6 +35,10 @@ public void clicksearch() {
 	}
 public String issearcheditemsDisplayed() {
 	return SearchItem.getText();
+}
+public void verifySearchedProductsHeading(String expectedText) {
+    String actualText = SearchItem.getText();
+    Assert.assertEquals(actualText, expectedText);
 }
 public boolean areSearchResultsDisplayed() {
     List<?> products = driver.findElements(productList);
