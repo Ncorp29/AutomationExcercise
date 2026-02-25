@@ -1,5 +1,16 @@
 # AI Fix Notes
 
+Session: seq-1772017713005-i36636opq
+Repository: Ncorp29/AutomationExcercise
+
+- [1] (high) src/test/java/pageObject/LoginPage.java: Page object exposes login credentials via public setter methods without validation or encryption. Consider using secure credential storage, obfuscation, or environment variables and avoid hard-coded input operations to reduce exposure in logs or CI outputs.
+- [2] (high) src/test/java/testCases/TC_001_DDT_SignUp.java: DDT is driven by static usernames/emails without any normalization or sanitization. Replaying the same email for every run easily exposes the suite to duplicate-account rejection in the AUT and, depending on how the application handles it, can surface validation vulnerabilities; sanitize data and randomize per run to avoid sending repetitive payloads or hitting backend rate limits.
+- [3] (high) src/test/java/testCases/TC_003_Acc_Info.java: The test flow fills signup/account information but never asserts after completing the steps (no validation of page state, success messages or persisted data). Without assertions, the test always passes even if the UI or backend behavior regresses, negating its effectiveness.
+- [4] (high) src/test/java/utilities/DataProviders.java: The nested loop calls `xlutil.getCellData()` for every cell; that method opens a new `FileInputStream` and `XSSFWorkbook` each time, so for N rows × M columns the file is re‑read NM times. This causes extreme I/O and drastically slows down test data provisioning (and may exhaust file handles). Consider loading the workbook/sheet once, iterating rows/cells in memory, and/or exposing a single method that returns all rows so the file is read only once.
+- [5] (high) src/test/java/utilities/FileUploadUtilities.java: Runtime.getRuntime().exec(autoItScriptPath) executes an arbitrary path provided via String without validation. If the caller ever derives that path from test data or parameters, it becomes a command-injection gateway. Restrict execution to known directories, validate/normalize the path, or switch to ProcessBuilder/Path APIs so that the executable and arguments cannot be spoofed.
+
+# AI Fix Notes
+
 Session: seq-1772012062994-k5tqc7sbj
 Repository: Ncorp29/AutomationExcercise
 
