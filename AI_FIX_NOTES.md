@@ -1,0 +1,11 @@
+# AI Fix Notes
+
+Session: seq-1772003482384-rmx6vfq9x
+Repository: Ncorp29/AutomationExcercise
+
+- [1] (high) src/test/java/pageObject/ContactUs.java: Same as above: the constructor does not initialize @FindBy-annotated fields (TextMessage, Name, Email, etc.). Without PageFactory.initElements, every element reference is null and every test build will blow up as soon as it tries to interact with ContactUs page elements. Call PageFactory.initElements(driver, this) (or delegate to BasePage) to wire the page object.
+- [2] (high) src/test/java/pageObject/ProductDetailsPage.java: WebElement ViewProduct is initialized via driver.findElement at field declaration time. Since the driver is only assigned in the BasePage constructor, this runs before the driver is available, leading to NullPointerException/NoSuchElementException on PageObject instantiation. Initialize the element lazily (e.g., via @FindBy + PageFactory.initElements in BasePage or inside a method) once the driver is ready.
+- [3] (high) src/test/java/pageObject/SearchProductPage.java: Page actions execute directly without synchronization (no explicit waits), which can lead to flaky tests and unhandled NoSuchElementExceptions that may mask real issues. Introduce stable waiting strategies (WebDriverWait with ExpectedConditions) before interacting with dynamic elements, especially for search results or product lists.
+- [4] (high) src/test/java/pageObject/SubscriptionPage.java: This page object defines several @FindBy fields (emailInput, subscribeButton, successMessage, etc.) but the constructor never calls PageFactory.initElements(driver, this). As a result, the WebElements remain null and any interaction throws NullPointerException. Initialize the locators (e.g., PageFactory.initElements(driver, this)) in this constructor or the shared BasePage so the annotations take effect.
+- [5] (high) src/test/java/utilities/ExcelUtility.java: File streams (`FileInputStream`, `FileOutputStream`) are managed as instance fields but never closed after read/write operations. Every call to methods like `getRowCount` or `setCellData` leaves the stream open, which causes file descriptor leaks and locks the Excel file. Refactor to use try-with-resources inside each helper (or at least explicit close/finally) so streams are closed promptly, improving reliability and performance.
+
