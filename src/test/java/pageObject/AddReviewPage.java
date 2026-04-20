@@ -11,21 +11,21 @@ public class AddReviewPage extends BasePage {
 		// TODO Auto-generated constructor stub
 	}
 
-@FindBy(xpath="//h2[@class='title text-center']")
+@FindBy(css="h2.title.text-center")
 WebElement AllProd;
-@FindBy(xpath="//div[@class='col-sm-9 padding-right']//div[2]//div[1]//div[2]//ul[1]//li[1]//a[1]")
+@FindBy(css=".col-sm-9.padding-right .product-image-wrapper:nth-of-type(2) .single-products .productinfo ~ ul li a")
 WebElement ViewProd;
-@FindBy(xpath="//a[normalize-space()='Write Your Review']")
+@FindBy(linkText="Write Your Review")
 WebElement WriteReviewText;
-@FindBy(xpath="//input[@id='name']")
+@FindBy(id="name")
 WebElement SetName;
-@FindBy(xpath="//input[@id='email']")
+@FindBy(id="email")
 WebElement SetEmail;
-@FindBy(xpath="//textarea[@id='review']")
+@FindBy(id="review")
 WebElement EnterReview;
-@FindBy(xpath="//button[@id='button-review']")
+@FindBy(id="button-review")
 WebElement SubmitReview;
-@FindBy(xpath="//div[@class='col-md-12 form-group']//div[@class='alert-success alert']")
+@FindBy(css=".col-md-12.form-group .alert-success.alert")
 WebElement Reviewmess;
 public String getallproductmesasage() {
 	return AllProd.getText();
