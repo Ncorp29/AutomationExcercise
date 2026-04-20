@@ -1,5 +1,16 @@
 # AI Fix Notes
 
+Session: seq-1776671394467-xqkcodpmo
+Repository: Ncorp29/AutomationExcercise
+
+- [1] (critical) src/test/java/utilities/ExcelUtility.java: Excel file handling uses mutable public fields (FileInputStream, FileOutputStream, workbook, sheet, row, cell) and likely manual stream management. This is unsafe and error-prone, increasing the risk of resource leaks and inconsistent state. Encapsulate fields, use try-with-resources, and close streams in finally blocks or auto-closeable patterns.
+- [2] (high) src/test/java/pageObject/Acc_InfoPage.java: Page Object fields appear to be package-private rather than private, which weakens encapsulation and makes the class harder to maintain safely. Selenium page objects should keep locators private and expose intent-based methods.
+- [3] (high) src/test/java/pageObject/AddReviewPage.java: The page object appears to rely on long absolute/ordinal XPaths for navigation and review submission. Such locators are fragile and can break when the DOM layout changes. Replace with resilient locators anchored to stable elements or semantic attributes.
+- [4] (high) src/test/java/pageObject/BasePage.java: Based on the pattern in descendant page objects, the framework likely centralizes WebDriver actions without visible secure handling of credentials, test data, or environment isolation. Ensure secrets are never hardcoded, and use environment variables or secure vaults for credentials.
+- [5] (high) src/test/java/pageObject/CategoryProductsPage.java: Locators are strongly coupled to visible text and nested DOM structure (e.g., category/subcategory XPaths). This introduces high brittleness and risks frequent false failures when UI copy or layout changes.
+
+# AI Fix Notes
+
 Session: seq-1772012062994-k5tqc7sbj
 Repository: Ncorp29/AutomationExcercise
 
