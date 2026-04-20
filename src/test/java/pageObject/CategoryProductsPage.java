@@ -13,13 +13,13 @@ public class CategoryProductsPage extends BasePage{
 
 @FindBy(xpath="//h2[normalize-space()='Category']")
 WebElement Category;
-@FindBy(xpath="//a[normalize-space()='Women']//i[@class='fa fa-plus']")
+@FindBy(xpath="//a[normalize-space()='Women']")
 WebElement Women;
-@FindBy(xpath="//div[@id='Women']//a[contains(text(),'Dress')]")
+@FindBy(xpath="//div[@id='Women']//a[normalize-space()='Dress']")
 WebElement Dress;
 @FindBy(xpath="//h2[@class='title text-center']")
 WebElement WomenConMess;
-@FindBy(xpath="//a[normalize-space()='Men']//i[@class='fa fa-plus']")
+@FindBy(xpath="//a[normalize-space()='Men']")
 WebElement SubCatMen;
 @FindBy(xpath="//a[normalize-space()='Tshirts']")
 WebElement SubCatTshirt;
