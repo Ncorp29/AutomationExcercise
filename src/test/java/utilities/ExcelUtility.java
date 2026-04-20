@@ -17,14 +17,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtility {
 
-	public FileInputStream fi;
-	public FileOutputStream fo;
-	public XSSFWorkbook workbook;
-	public XSSFSheet sheet;
-	public XSSFRow row;
-	public XSSFCell cell;
-	public CellStyle style;   
-	String path;
+	private String path;
 	
 	public ExcelUtility(String path)
 	{
@@ -33,48 +26,45 @@ public class ExcelUtility {
 		
 	public int getRowCount(String sheetName) throws IOException 
 	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		int rowcount=sheet.getLastRowNum();
-		workbook.close();
-		fi.close();
-		return rowcount;		
+		try (FileInputStream fi = new FileInputStream(path);
+			 XSSFWorkbook workbook = new XSSFWorkbook(fi)) {
+			XSSFSheet sheet = workbook.getSheet(sheetName);
+			int rowcount=sheet.getLastRowNum();
+			return rowcount;
+		}
 	}
 	
 	public int getCellCount(String sheetName,int rownum) throws IOException
 	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		row=sheet.getRow(rownum);
-		int cellcount=row.getLastCellNum();
-		workbook.close();
-		fi.close();
-		return cellcount;
+		try (FileInputStream fi = new FileInputStream(path);
+			 XSSFWorkbook workbook = new XSSFWorkbook(fi)) {
+			XSSFSheet sheet = workbook.getSheet(sheetName);
+			XSSFRow row=sheet.getRow(rownum);
+			int cellcount=row.getLastCellNum();
+			return cellcount;
+		}
 	}
 	
 	
 	public String getCellData(String sheetName,int rownum,int colnum) throws IOException
 	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		row=sheet.getRow(rownum);
-		cell=row.getCell(colnum);
-		
-		DataFormatter formatter = new DataFormatter();
-		String data;
-		try{
-		data = formatter.formatCellValue(cell); //Returns the formatted value of a cell as a String regardless of the cell type.
+		try (FileInputStream fi = new FileInputStream(path);
+			 XSSFWorkbook workbook = new XSSFWorkbook(fi)) {
+			XSSFSheet sheet = workbook.getSheet(sheetName);
+			XSSFRow row=sheet.getRow(rownum);
+			XSSFCell cell=row.getCell(colnum);
+			
+			DataFormatter formatter = new DataFormatter();
+			String data;
+			try{
+			data = formatter.formatCellValue(cell); //Returns the formatted value of a cell as a String regardless of the cell type.
+			}
+			catch(Exception e)
+			{
+				data="";
+			}
+			return data;
 		}
-		catch(Exception e)
-		{
-			data="";
-		}
-		workbook.close();
-		fi.close();
-		return data;
 	}
 	
 	public void setCellData(String sheetName,int rownum,int colnum,String data) throws IOException
@@ -82,74 +72,70 @@ public class ExcelUtility {
 		File xlfile=new File(path);
 		if(!xlfile.exists())    // If file not exists then create new file
 		{
-		workbook=new XSSFWorkbook();
-		fo=new FileOutputStream(path);
-		workbook.write(fo);
+			try (XSSFWorkbook workbook=new XSSFWorkbook();
+				 FileOutputStream fo=new FileOutputStream(path)) {
+				workbook.write(fo);
+			}
 		}
 				
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
+		try (FileInputStream fi=new FileInputStream(path);
+			 XSSFWorkbook workbook=new XSSFWorkbook(fi)) {
 			
-		if(workbook.getSheetIndex(sheetName)==-1) // If sheet not exists then create new Sheet
-			workbook.createSheet(sheetName);
-		sheet=workbook.getSheet(sheetName);
-					
-		if(sheet.getRow(rownum)==null)   // If row not exists then create new Row
-				sheet.createRow(rownum);
-		row=sheet.getRow(rownum);
-		
-		cell=row.createCell(colnum);
-		cell.setCellValue(data);
-		fo=new FileOutputStream(path);
-		workbook.write(fo);		
-		workbook.close();
-		fi.close();
-		fo.close();
+			if(workbook.getSheetIndex(sheetName)==-1) // If sheet not exists then create new Sheet
+				workbook.createSheet(sheetName);
+			XSSFSheet sheet=workbook.getSheet(sheetName);
+						
+			if(sheet.getRow(rownum)==null)   // If row not exists then create new Row
+					sheet.createRow(rownum);
+			XSSFRow row=sheet.getRow(rownum);
+			
+			XSSFCell cell=row.createCell(colnum);
+			cell.setCellValue(data);
+			try (FileOutputStream fo=new FileOutputStream(path)) {
+				workbook.write(fo);
+			}
+		}
 	}
 	
 	
 	public void fillGreenColor(String sheetName,int rownum,int colnum) throws IOException
 	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		
-		row=sheet.getRow(rownum);
-		cell=row.getCell(colnum);
-		
-		style=workbook.createCellStyle();
-		
-		style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
-		style.setFillPattern(FillPatternType.SOLID_FOREGROUND); 
-				
-		cell.setCellStyle(style);
-		workbook.write(fo);
-		workbook.close();
-		fi.close();
-		fo.close();
+		try (FileInputStream fi=new FileInputStream(path);
+			 XSSFWorkbook workbook=new XSSFWorkbook(fi);
+			 FileOutputStream fo=new FileOutputStream(path)) {
+			XSSFSheet sheet=workbook.getSheet(sheetName);
+			
+			XSSFRow row=sheet.getRow(rownum);
+			XSSFCell cell=row.getCell(colnum);
+			
+			CellStyle style=workbook.createCellStyle();
+			
+			style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
+			style.setFillPattern(FillPatternType.SOLID_FOREGROUND); 
+					
+			cell.setCellStyle(style);
+			workbook.write(fo);
+		}
 	}
 	
 	
 	public void fillRedColor(String sheetName,int rownum,int colnum) throws IOException
 	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		row=sheet.getRow(rownum);
-		cell=row.getCell(colnum);
-		
-		style=workbook.createCellStyle();
-		
-		style.setFillForegroundColor(IndexedColors.RED.getIndex());
-		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);  
-		
-		cell.setCellStyle(style);		
-		workbook.write(fo);
-		workbook.close();
-		fi.close();
-		fo.close();
+		try (FileInputStream fi=new FileInputStream(path);
+			 XSSFWorkbook workbook=new XSSFWorkbook(fi);
+			 FileOutputStream fo=new FileOutputStream(path)) {
+			XSSFSheet sheet=workbook.getSheet(sheetName);
+			XSSFRow row=sheet.getRow(rownum);
+			XSSFCell cell=row.getCell(colnum);
+			
+			CellStyle style=workbook.createCellStyle();
+			
+			style.setFillForegroundColor(IndexedColors.RED.getIndex());
+			style.setFillPattern(FillPatternType.SOLID_FOREGROUND);  
+			
+			cell.setCellStyle(style);		
+			workbook.write(fo);
+		}
 	}
 	
 }
-
-
