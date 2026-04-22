@@ -16,55 +16,55 @@ public class Acc_InfoPage extends BasePage {
     }
 
     @FindBy(xpath = "//input[@id='id_gender1']")
-    WebElement Title;
+    private WebElement Title;
 
     @FindBy(xpath = "//input[@id='password']")
-    WebElement Password;
+    private WebElement Password;
 
     @FindBy(xpath = "//select[@id='days']")
-    WebElement dayDropdown;
+    private WebElement dayDropdown;
 
     @FindBy(xpath = "//select[@id='months']")
-    WebElement monthDropdown;
+    private WebElement monthDropdown;
 
     @FindBy(xpath = "//select[@id='years']")
-    WebElement yearDropdown;
+    private WebElement yearDropdown;
 
     @FindBy(xpath = "//input[@id='newsletter']")
-    WebElement newsletter;
+    private WebElement newsletter;
 
     @FindBy(xpath = "//input[@id='optin']")
-    WebElement option;
+    private WebElement option;
 
     @FindBy(xpath = "//input[@id='first_name']")
-    WebElement Firstname;
+    private WebElement Firstname;
 
     @FindBy(xpath = "//input[@id='last_name']")
-    WebElement Lastname;
+    private WebElement Lastname;
 
     @FindBy(xpath = "//input[@id='address1']")
-    WebElement Address;
+    private WebElement Address;
 
     @FindBy(xpath = "//select[@id='country']")
-    WebElement countryDropdown;
+    private WebElement countryDropdown;
 
     @FindBy(xpath = "//input[@id='state']")
-    WebElement State;
+    private WebElement State;
 
     @FindBy(xpath = "//input[@id='city']")
-    WebElement City;
+    private WebElement City;
 
     @FindBy(xpath = "//input[@id='zipcode']")
-    WebElement zipcode;
+    private WebElement zipcode;
 
     @FindBy(xpath = "//input[@id='mobile_number']")
-    WebElement Mob_no;
+    private WebElement Mob_no;
 
     @FindBy(xpath = "//button[normalize-space()='Create Account']")
-    WebElement Create_acc;
+    private WebElement Create_acc;
 
     @FindBy(xpath = "//h2[@class='title text-center']")
-    WebElement AccountCreated;
+    private WebElement AccountCreated;
 
     public void selectTitle() {
         Title.click();
