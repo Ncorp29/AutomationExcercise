@@ -17,7 +17,7 @@ public class HomePage extends BasePage{
 	WebElement Contactus;
 	@FindBy(xpath="//a[@href='/products']")
 	WebElement Products;
-	@FindBy(xpath="/html[1]/body[1]/header[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]")
+	@FindBy(xpath="//a[normalize-space()='Cart']")
 	WebElement Cart;
 	
 	public void clicksignup() {
