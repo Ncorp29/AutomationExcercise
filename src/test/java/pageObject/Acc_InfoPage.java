@@ -16,10 +16,10 @@ public class Acc_InfoPage extends BasePage {
     }
 
     @FindBy(xpath = "//input[@id='id_gender1']")
-    private WebElement Title;
+    private WebElement title;
 
     @FindBy(xpath = "//input[@id='password']")
-    private WebElement Password;
+    private WebElement password;
 
     @FindBy(xpath = "//select[@id='days']")
     private WebElement dayDropdown;
@@ -37,42 +37,42 @@ public class Acc_InfoPage extends BasePage {
     private WebElement option;
 
     @FindBy(xpath = "//input[@id='first_name']")
-    private WebElement Firstname;
+    private WebElement firstName;
 
     @FindBy(xpath = "//input[@id='last_name']")
-    private WebElement Lastname;
+    private WebElement lastName;
 
     @FindBy(xpath = "//input[@id='address1']")
-    private WebElement Address;
+    private WebElement address;
 
     @FindBy(xpath = "//select[@id='country']")
     private WebElement countryDropdown;
 
     @FindBy(xpath = "//input[@id='state']")
-    private WebElement State;
+    private WebElement state;
 
     @FindBy(xpath = "//input[@id='city']")
-    private WebElement City;
+    private WebElement city;
 
     @FindBy(xpath = "//input[@id='zipcode']")
     private WebElement zipcode;
 
     @FindBy(xpath = "//input[@id='mobile_number']")
-    private WebElement Mob_no;
+    private WebElement mobNo;
 
     @FindBy(xpath = "//button[normalize-space()='Create Account']")
-    private WebElement Create_acc;
+    private WebElement createAcc;
 
     @FindBy(xpath = "//h2[@class='title text-center']")
-    private WebElement AccountCreated;
+    private WebElement accountCreated;
 
     public void selectTitle() {
-        Title.click();
+        title.click();
     }
 
     public void setPassword(String password) {
-        Password.clear();
-        Password.sendKeys(password);
+        this.password.clear();
+        this.password.sendKeys(password);
     }
 
     public void selectDOB(String day, String month, String year) {
@@ -100,18 +100,18 @@ public class Acc_InfoPage extends BasePage {
     }
 
     public void setFirstName(String firstName) {
-        Firstname.clear();
-        Firstname.sendKeys(firstName);
+        this.firstName.clear();
+        this.firstName.sendKeys(firstName);
     }
 
     public void setLastName(String lastName) {
-        Lastname.clear();
-        Lastname.sendKeys(lastName);
+        this.lastName.clear();
+        this.lastName.sendKeys(lastName);
     }
 
     public void setAddress(String address) {
-        Address.clear();
-        Address.sendKeys(address);
+        this.address.clear();
+        this.address.sendKeys(address);
     }
 
     public void selectCountry(String countryName) {
@@ -125,25 +125,25 @@ public class Acc_InfoPage extends BasePage {
     }
 
     public void setState(String state) {
-        State.clear();
-        State.sendKeys(state);
+        this.state.clear();
+        this.state.sendKeys(state);
     }
 
     public void setCity(String city) {
-        City.clear();
-        City.sendKeys(city);
+        this.city.clear();
+        this.city.sendKeys(city);
     }
 
     public void setMobileNo(String mob_no) {
-        Mob_no.clear();
-        Mob_no.sendKeys(mob_no);
+        mobNo.clear();
+        mobNo.sendKeys(mob_no);
     }
 
     public void clickCreateAcc() {
-        Create_acc.click();
+        createAcc.click();
     }
 
     public String isConfirmationMessageDisplayed() {
-        return AccountCreated.getText();
+        return accountCreated.getText();
     }
 }

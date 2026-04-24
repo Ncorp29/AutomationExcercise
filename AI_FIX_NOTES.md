@@ -1,5 +1,16 @@
 # AI Fix Notes
 
+Session: seq-1777007559418-hqb08apun
+Repository: Ncorp29/AutomationExcercise
+
+- [1] (critical) src/test/java/utilities/FileUploadUtilities.java: Uses Runtime.getRuntime().exec(autoItScriptPath) on an externally supplied path. This can execute arbitrary binaries/scripts if the input is influenced by untrusted data. Validate and whitelist allowed executables, or replace with a safer upload mechanism.
+- [2] (high) src/test/java/pageObject/Acc_InfoPage.java: The page object uses non-idiomatic naming for fields (e.g., Title, Password, dayDropdown) and likely relies on direct WebElement handling. Follow Java conventions (camelCase, private fields) and ensure a consistent PageFactory initialization pattern.
+- [3] (high) src/test/java/pageObject/BasePage.java: BasePage stores WebDriver in a package-private field and provides no helper methods for waits, safe clicks, or common synchronization. This encourages duplicated logic across page objects and increases flakiness in UI tests.
+- [4] (high) src/test/java/pageObject/ContactUs.java: Page Object fields are package-private and constructor contains TODO/stub behavior. In Selenium page objects, fields should be private and initialized consistently via PageFactory to avoid fragile tests and hidden coupling.
+- [5] (high) src/test/java/pageObject/HomePage.java: The Cart locator uses an absolute XPath (/html[1]/body[1]/...), which is brittle and likely to break with minor DOM changes. Prefer stable attributes, relative XPath, CSS selectors, or data-testid-style locators.
+
+# AI Fix Notes
+
 Session: seq-1776671394467-xqkcodpmo
 Repository: Ncorp29/AutomationExcercise
 
