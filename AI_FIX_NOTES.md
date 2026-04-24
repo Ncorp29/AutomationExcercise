@@ -1,5 +1,16 @@
 # AI Fix Notes
 
+Session: seq-1777010477453-fzpgu2idb
+Repository: Ncorp29/AutomationExcercise
+
+- [1] (critical) src/test/java/utilities/FileUploadUtilities.java: Uses Runtime.getRuntime().exec() on a caller-supplied path without validation or argument escaping. This can lead to command injection or execution of unintended binaries/scripts, especially if the path is influenced by test data or environment variables.
+- [2] (high) src/test/java/pageObject/ContactUs.java: Page Object appears to omit PageFactory initialization and uses package-private fields instead of private encapsulation. This weakens the Page Object pattern, increases coupling, and risks NullPointerException when interacting with annotated elements.
+- [3] (high) src/test/java/pageObject/HomePage.java: The Cart locator uses an absolute XPath (/html/body/...) which is brittle and highly sensitive to layout changes. Replace it with a stable attribute-based locator or a relative XPath/CSS selector. Absolute paths significantly increase test flakiness.
+- [4] (high) src/test/java/pageObject/LoginPage.java: The page object handles credentials directly through simple sendKeys without any visible safeguards or masking/logging discipline. While typical for UI tests, ensure test logs never print passwords and avoid storing secrets in test code or plaintext data providers.
+- [5] (high) src/test/java/pageObject/ProductQunPage.java: Element names and class name contain spelling inconsistencies (ProductQunPage, ProdQun, clickviewproduct). These naming issues reduce code clarity and can cause confusion during maintenance. Rename to ProductQuantityPage, productQuantity, clickViewProduct().
+
+# AI Fix Notes
+
 Session: seq-1776671394467-xqkcodpmo
 Repository: Ncorp29/AutomationExcercise
 

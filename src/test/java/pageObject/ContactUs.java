@@ -5,31 +5,43 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 
 public class ContactUs extends BasePage{
 
+private WebElement TextMessage;
+private WebElement Name;
+private WebElement Email;
+private WebElement Subject;
+private WebElement Message;
+private WebElement UploadFile;
+//WebElement fileInput =driver.findElement(By.cssSelector("input[name='upload_file']"));
+private WebElement Submit;
+private WebElement Success;
+
 public ContactUs(WebDriver driver) {
 		super(driver);
+		PageFactory.initElements(driver, this);
 		// TODO Auto-generated constructor stub
 	}
 @FindBy(xpath="//h2[normalize-space()='Get In Touch']")
-WebElement TextMessage;
+private WebElement TextMessage;
 @FindBy(xpath="//input[@placeholder='Name']")
-WebElement Name;
+private WebElement Name;
 @FindBy(xpath="//input[@placeholder='Email']")
-WebElement Email;
+private WebElement Email;
 @FindBy(xpath="//input[@placeholder='Subject']")
-WebElement Subject;
+private WebElement Subject;
 @FindBy(xpath="//textarea[@id='message']")
-WebElement Message;
+private WebElement Message;
 @FindBy(xpath="//input[@name='upload_file']")
-WebElement UploadFile;
+private WebElement UploadFile;
 //WebElement fileInput =driver.findElement(By.cssSelector("input[name='upload_file']"));
 @FindBy(xpath="//input[@name='submit']")
-WebElement Submit;
+private WebElement Submit;
 @FindBy(xpath="//div[@class='status alert alert-success']")
-WebElement Success;
+private WebElement Success;
 
 public String isContactUsMessageDisplayed() {
 return TextMessage.getText();
